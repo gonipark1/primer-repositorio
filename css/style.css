@@ -36,6 +36,11 @@ body {
     white-space: nowrap;
 }
 
+.login a:hover {
+    background-color: #434491;
+    color: rgb(230, 227, 227); 
+}
+
 .login-icono img{
     max-width: 70px;
     margin-right: 30px;
@@ -56,6 +61,11 @@ body {
     color: white;   
     text-decoration: none;
     white-space: nowrap;
+}
+
+.nav-links a:hover{
+    background-color: #534f4d;
+    color: rgb(230, 227, 227);   
 }
 
 .nav-bar-2 {
