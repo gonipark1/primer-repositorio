@@ -310,7 +310,7 @@ main {
 .about-container{
     display: flex;
     flex-direction: column;
-    padding: 20px 70px;
+    padding: 2rem 3rem;
 
     div{
         p{
@@ -320,6 +320,18 @@ main {
             float: right;
         }
     }
+}
+
+/* contacto main */
+
+.formulario-title{
+    text-align: justify;
+    padding: 20px 50px;
+    display: inline-block;
+}
+
+.formulario-container{
+    padding: 0px 50px 40px 50px;
 }
 
 /* media queries */
