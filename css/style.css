@@ -211,49 +211,70 @@ main {
   height: 30px;
 }
 
-.prod-1 .img-1 {
+.img-1 {
   grid-area: img-1;
 }
-.prod-1 .precio-1 {
+
+.precio-1 {
   grid-area: precio-1;
 }
-.prod-1 .descripcion-1 {
+
+.descripcion-1 {
   grid-area: descripcion-1;
 }
 
-.prod-2 .img-2 {
+.img-2 {
   grid-area: img-2;
 }
-.prod-2 .precio-2 {
+
+.precio-2 {
   grid-area: precio-2;
 }
-.prod-2 .descripcion-2 {
+
+.descripcion-2 {
   grid-area: descripcion-2;
 }
 
-.prod-3 .img-3 {
+.img-3 {
   grid-area: img-3;
 }
-.prod-3 .precio-3 {
+
+.precio-3 {
   grid-area: precio-3;
 }
-.prod-3 .descripcion-3 {
+
+.descripcion-3 {
   grid-area: descripcion-3;
 }
 
-.prod-4 .img-4 {
+.img-4 {
   grid-area: img-4;
 }
-.prod-4 .precio-4 {
+
+.precio-4 {
   grid-area: precio-4;
 }
-.prod-4 .descripcion-4 {
+
+.descripcion-4 {
   grid-area: descripcion-4;
 }
 
-.productos {
+.productos-container {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
   grid-template-areas: "img-1 precio-1      img-2 precio-2" "img-1 descripcion-1 img-2 descripcion-2" "img-3 precio-3      img-4 precio-4" "img-3 descripcion-3 img-4 descripcion-4";
+}
+.productos-container .img {
+  margin: auto;
+}
+.productos-container .precio {
+  margin: 0.5rem;
+}
+.productos-container .descripcion {
+  margin: 0.5rem;
 }
 
 /* main ubicacion */
@@ -297,6 +318,18 @@ main {
   padding: 0px 50px 40px 50px;
 }
 
+/* faq main */
+.faq-container {
+  padding: 20px 50px;
+  display: inline-block;
+}
+
+/* tos main */
+.tos-container {
+  padding: 20px 50px;
+  display: inline-block;
+}
+
 /* media queries */
 @media (max-width: 1368px) {
   .login-texto {
@@ -304,6 +337,11 @@ main {
   }
   .login-icono {
     display: flex;
+  }
+  .productos-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: "img-1 precio-1" "img-1 descripcion-1" "img-2 precio-2" "img-2 descripcion-2" "img-3 precio-3" "img-3 descripcion-3" "img-4 precio-4" "img-4 descripcion-4";
   }
 }
 @media (min-width: 1368px) {
